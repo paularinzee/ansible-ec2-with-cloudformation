@@ -1,0 +1,7 @@
+---
+- name: Deploy a web server in an EC2 Virtual Machine
+  hosts: web
+  user: ubuntu
+  become: true # kind of like sudo
+  roles:
+    - nodejs-server
